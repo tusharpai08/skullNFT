@@ -6,14 +6,14 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "SeaArt";
-const description = "Skull Sea artworks";
+const namePrefix = "ApollyonArtCollection";
+const description = "The name Apollyon is mentioned in Revelation 9:11 and is used to refer to a king of demons. The Bible names Apollyon as “the angel of the bottomless pit”. This is an art collection illustrating Apollyon.";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 10,
+    growEditionSizeTo: 1,
     layersOrder: [
       { name: "background" },
       { name: "pattern" },
@@ -31,35 +31,35 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 631,
-  height: 631,
+  width: 1500,
+  height: 1500,
   smoothing: true,
 };
 
 const extraMetadata = {
-  //external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
+  
 };
 
 // NFTPort Info
 // ** REQUIRED **
-const AUTH = "YOUR API KEY HERE";
+const AUTH = "3c825e96-2c0a-4395-916e-19347c11acbe";
 const LIMIT = 2; // Your API key rate limit
-const CONTRACT_NAME = 'CRYPTOPUNKS';
-const CONTRACT_SYMBOL = 'CP';
+const CONTRACT_NAME = 'ApollyonArtCollection';
+const CONTRACT_SYMBOL = 'AAC';
 const CONTRACT_TYPE = 'erc721';
-const MINT_TO_ADDRESS = 'YOUR WALLET ADDRESS HERE';
+const MINT_TO_ADDRESS = '0x1FbE793f56A7C37e6C9Db77c4075738e7e8Eeb77';
 const CHAIN = 'rinkeby';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
-const ROYALTY_ADDRESS = "0xd8B808A887326F45B2D0cd999709Aa6264CeF919"; // Address that will receive the royalty
+const ROYALTY_ADDRESS = "0x1FbE793f56A7C37e6C9Db77c4075738e7e8Eeb77"; // Address that will receive the royalty
 // ** OPTIONAL **
 let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it
 // Generic Metadata is optional if you want to reveal your NFTs
-const GENERIC = false; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
-const GENERIC_TITLE = "Unknown"; // Replace with what you want the generic titles to say.
-const GENERIC_DESCRIPTION = "Unknown"; // Replace with what you want the generic descriptions to say.
+const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
+const GENERIC_TITLE = "UnknownApollyon"; // Replace with what you want the generic titles to say.
+const GENERIC_DESCRIPTION = "UnknownApollyon! Buy now to reveal the Apollyon"; // Replace with what you want the generic descriptions to say.
 const GENERIC_IMAGE = [
-  "https://ipfs.io/ipfs/QmUf9tDbkqnfHkQaMdFWSGAeXwVXWA61pFED7ypx4hcsfh",
+  "https://ipfs.io/ipfs/QmTqs6EJETFE2RkRqDXUe9Knt2ZipN92U3dLkeCszdYmDR",
 ]; // Replace with your generic image(s). If multiple, separate with a comma.
 const REVEAL_PROMPT = true; // Set to false if you want to disable the prompt to confirm each reveal.
 const INTERVAL = 900000; // Milliseconds. This is the interval for it to check for sales and reveal the NFT. 900000 = 15 minutes.
@@ -79,9 +79,9 @@ try {
 // END NFTPort Info
 
 const solanaMetadata = {
-  symbol: "YC",
-  seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  symbol: "AAC",
+  seller_fee_basis_points: 2000, // Define how much % you want from secondary market sales 2000 = 20%
+  external_url: "",
   creators: [
     {
       address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",

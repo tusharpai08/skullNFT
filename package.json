@@ -1,7 +1,7 @@
 {
-  "name": "10k-collection-video",
+  "name": "NFT-by-TUSHAR",
   "version": "2.0.0",
-  "description": "How To Create An ENTIRE NFT Collection (10,000+) & MINT",
+  "description": "NFTs by TUSHAR",
   "main": "index.js",
   "bin": "index.js",
   "pkg": {
@@ -35,11 +35,11 @@
   "license": "MIT",
   "dependencies": {
     "async-sema": "^3.1.1",
-    "canvas": "^2.8.0",
+    "canvas": "^2.9.1",
     "form-data": "^4.0.0",
     "gif-encoder-2": "^1.0.5",
-    "node-fetch": "^2.6.6",
-    "puppeteer": "^13.4.1",
+    "node-fetch": "^2.6.7",
+    "puppeteer": "^13.5.2",
     "puppeteer-extra": "^3.2.3",
     "puppeteer-extra-plugin-adblocker": "^2.12.0",
     "puppeteer-extra-plugin-stealth": "^2.9.0",
